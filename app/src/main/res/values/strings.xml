@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">أذكار المسلم</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="adkare_soubh">أذكار الصبح</string>
+    <string name="adkare_masaa">أذكار المساء</string>
+    <string name="adkare_noume">أذكار النوم</string>
+    <string name="adkare_istigade">أذكار الاستيقاظ</string>
+    <string name="adkare_sfare">أذكار السفر</string>
+    <string name="adkare_slate">أذكار بعد الصلاة</string>
+    <string name="misbaha">المسبحة الالكترونية</string>
+
+</resources>

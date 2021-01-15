@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/app_bar" />
+
+    <Button
+        android:id="@+id/btn_adkare_soubh"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/adkare_soubh"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_adkare_masaa"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/adkare_masaa" />
+
+    <Button
+        android:id="@+id/btn_adkare_istigade"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_adkare_soubh"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/adkare_istigade" />
+
+
+    <Button
+        android:id="@+id/btn_adkare_noum"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_adkare_masaa"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/adkare_noume" />
+
+    <Button
+        android:id="@+id/btn_adkare_safare"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_adkare_istigade"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/adkare_sfare" />
+
+    <Button
+        android:id="@+id/btn_adkare_salate"
+        style="@style/style_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_adkare_noum"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/adkare_slate" />
+
+    <Button
+        android:id="@+id/btn_misbaha"
+        style="@style/style_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_adkare_salate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/misbaha" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:padding="16dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text_diker"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="@drawable/costume_text_view"
+            android:text=" بسم الله الرحمان الرحيم "
+            android:lineSpacingMultiplier="1.5"/>
+
+
+
+        <Button
+            android:id="@+id/button_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/costume_button_1"
+            android:gravity="center"
+
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

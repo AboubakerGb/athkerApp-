@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.aboubakergb.AdkareElmoslim.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_soubh"
+            app:destination="@id/adkare_soubh" />
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_elmassa"
+            app:destination="@id/adkare_elmassa" />
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_isitgade"
+            app:destination="@id/adkare_isitgade" />
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_Noume"
+            app:destination="@id/adkare_Noume" />
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_safare"
+            app:destination="@id/adkare_safare" />
+        <action
+            android:id="@+id/action_mainFragment_to_adkare_salate"
+            app:destination="@id/adkare_salate" />
+    </fragment>
+    <fragment
+        android:id="@+id/adkare_soubh"
+        android:name="com.aboubakergb.AdkareElmoslim.adkare_soubh"
+        android:label="fragment_adkare_soubh"
+        tools:layout="@layout/fragment_adkare_soubh" />
+    <fragment
+        android:id="@+id/adkare_elmassa"
+        android:name="com.aboubakergb.AdkareElmoslim.adkare_elmassa"
+        android:label="fragment_adkare_elmassa"
+        tools:layout="@layout/fragment_adkare_elmassa" />
+    <fragment
+        android:id="@+id/adkare_isitgade"
+        android:name="com.aboubakergb.AdkareElmoslim.adkare_isitgade"
+        android:label="fragment_adkare_isitgade"
+        tools:layout="@layout/fragment_adkare_isitgade" />
+    <fragment
+        android:id="@+id/adkare_Noume"
+        android:name="com.aboubakergb.AdkareElmoslim.Adkare_Noume"
+        android:label="fragment_adkare__noume"
+        tools:layout="@layout/fragment_adkare__noume" />
+    <fragment
+        android:id="@+id/adkare_safare"
+        android:name="com.aboubakergb.AdkareElmoslim.adkare_safare"
+        android:label="fragment_adkare_safare"
+        tools:layout="@layout/fragment_adkare_safare" />
+    <fragment
+        android:id="@+id/adkare_salate"
+        android:name="com.aboubakergb.AdkareElmoslim.adkare_salate"
+        android:label="fragment_adkare_salate"
+        tools:layout="@layout/fragment_adkare_salate" />
+</navigation>
