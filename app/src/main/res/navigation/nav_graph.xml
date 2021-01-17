@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_mainFragment_to_adkare_salate"
             app:destination="@id/adkare_salate" />
+        <action
+            android:id="@+id/action_mainFragment_to_tasbih"
+            app:destination="@id/tasbih" />
     </fragment>
     <fragment
         android:id="@+id/adkare_soubh"
@@ -59,4 +62,9 @@
         android:name="com.aboubakergb.AdkareElmoslim.adkare_salate"
         android:label="fragment_adkare_salate"
         tools:layout="@layout/fragment_adkare_salate" />
+    <fragment
+        android:id="@+id/tasbih"
+        android:name="com.aboubakergb.AdkareElmoslim.tasbih"
+        android:label="fragment_tasbih"
+        tools:layout="@layout/fragment_tasbih" />
 </navigation>

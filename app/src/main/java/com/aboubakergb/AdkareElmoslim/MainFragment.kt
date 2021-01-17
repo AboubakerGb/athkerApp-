@@ -18,6 +18,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         btn_adkare_soubh.setOnClickListener {
         view.findNavController().navigate(R.id.action_mainFragment_to_adkare_soubh)
         }
@@ -36,8 +37,9 @@ class MainFragment : Fragment() {
         btn_adkare_salate.setOnClickListener {
             view.findNavController().navigate(R.id.action_mainFragment_to_adkare_salate)
         }
-
-
+        btn_misbaha.setOnClickListener {
+            view.findNavController().navigate(R.id.action_mainFragment_to_tasbih)
+        }
     }
 
     override fun onCreateView(
@@ -46,5 +48,7 @@ class MainFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
+
     }
+
 }

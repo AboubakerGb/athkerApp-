@@ -4,12 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/yellow"
     tools:context=".MainFragment">
 
-    <include
-        android:id="@+id/tool_bar"
-        layout="@layout/app_bar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:title="أذكار المسلم"
+        app:titleMarginStart="300dp"
+        android:background="@color/blue_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
 
     <Button
         android:id="@+id/btn_adkare_soubh"

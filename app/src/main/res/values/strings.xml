@@ -10,5 +10,8 @@
     <string name="adkare_sfare">أذكار السفر</string>
     <string name="adkare_slate">أذكار بعد الصلاة</string>
     <string name="misbaha">المسبحة الالكترونية</string>
+    <string name="allCounter">العدد الاجمالي</string>
+    <string name="nowCounter">العدد الحالي</string>
+    <string name="tsabih">سبحان الله وبحمده</string>
 
 </resources>

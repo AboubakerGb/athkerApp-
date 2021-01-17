@@ -7,17 +7,12 @@
     android:background="@color/blue"
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-    <TextView
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingRight="20dp"
-        android:text="أذكار المسلم"
-        android:textSize="30sp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="أذكار المسلم"
+    app:titleMarginStart="300dp"
+    
+    >
 
 
-        />
 
 </androidx.appcompat.widget.Toolbar>
