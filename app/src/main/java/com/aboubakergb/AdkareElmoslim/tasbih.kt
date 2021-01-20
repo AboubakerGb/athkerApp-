@@ -7,13 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_tasbih.*
 
-class tasbih : Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
+class tasbih : Fragment(R.layout.fragment_tasbih) {
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
