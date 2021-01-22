@@ -13,7 +13,14 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Toast(this.activity).apply {
+            duration=Toast.LENGTH_SHORT
+            view=layoutInflater.inflate(R.layout.costume_toaste,toast)
+            show()
+        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -43,15 +50,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
 
-        Toast(this.activity).apply {
-            duration=Toast.LENGTH_SHORT
-            view=layoutInflater.inflate(R.layout.costume_toaste,toast)
-            show()
-        }
-    }
 
 
 

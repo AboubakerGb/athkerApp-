@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.card_view.*
 
 class RecycleViewAdapter : RecyclerView.Adapter<RecycleViewAdapter.ViewHolder>() {
     // Here put Text
@@ -48,10 +49,33 @@ class RecycleViewAdapter : RecyclerView.Adapter<RecycleViewAdapter.ViewHolder>()
         holder.text.text =itemAdkare[position]
         holder.btn.text = itemNumber[position].toString()
 
+        holder.btn.setOnClickListener {
+            var numberOfTasbih =holder.btn.text.toString().toInt()
+            if (numberOfTasbih == 0){
+                //to disable the button when the number is 0
+                holder.btn.setBackgroundResource(R.drawable.costume_button_disable)
+                holder.btn.isEnabled=false
 
-    }
+            }else{
+
+            numberOfTasbih -= 1
+            holder.btn.text= numberOfTasbih.toString()
+            }
+
+
+        }
+
+
+
+        }
+
+
+
 
     override fun getItemCount(): Int {
         return itemAdkare.size
     }
+
+
+
 }

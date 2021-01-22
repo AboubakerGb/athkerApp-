@@ -12,16 +12,26 @@ class tasbih : Fragment(R.layout.fragment_tasbih) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+        btn_tasbih.setOnClickListener {
+
+            var currentNumber : Int = tv_current_number.text.toString().toInt()
+            var numberOfCycles = tv_number_of_cycles.text.toString().toInt()
+
+            if (currentNumber==33){
+                numberOfCycles=numberOfCycles+1
+                tv_number_of_cycles.text=numberOfCycles.toString()
+                tv_current_number.text= 0.toString()
+
+            }else{
+             currentNumber= currentNumber + 1
+
+            tv_current_number.text= currentNumber.toString()
+            }
+
+        }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tasbih, container, false)
-    }
 
-
-
-    }
+}

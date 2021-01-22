@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
     tools:context=".MainFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,7 +12,7 @@
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
         app:title="أذكار المسلم"
-        app:titleMarginStart="300dp"
+        app:titleMarginStart="250dp"
         android:background="@color/blue_dark"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
