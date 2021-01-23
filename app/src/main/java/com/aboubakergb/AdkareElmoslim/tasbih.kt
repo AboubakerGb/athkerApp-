@@ -19,13 +19,14 @@ class tasbih : Fragment(R.layout.fragment_tasbih) {
             var currentNumber : Int = tv_current_number.text.toString().toInt()
             var numberOfCycles = tv_number_of_cycles.text.toString().toInt()
 
+            //when the the number of tasbih been 33 add 1 to number of cycles
             if (currentNumber==33){
-                numberOfCycles=numberOfCycles+1
+                numberOfCycles += 1
                 tv_number_of_cycles.text=numberOfCycles.toString()
                 tv_current_number.text= 0.toString()
 
             }else{
-             currentNumber= currentNumber + 1
+                currentNumber += 1
 
             tv_current_number.text= currentNumber.toString()
             }

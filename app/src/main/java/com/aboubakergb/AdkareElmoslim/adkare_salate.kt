@@ -12,10 +12,7 @@ import kotlinx.android.synthetic.main.fragment_adkare_salate.*
 
 class adkare_salate : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

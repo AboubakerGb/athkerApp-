@@ -46,37 +46,8 @@ class RecycleAdkareElmassaAdapter :RecyclerView.Adapter<RecycleAdkareElmassaAdap
         "اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ ، عَلَيْكَ تَوَكَّلْتُ ، وَأَنْتَ رَبُّ الْعَرْشِ الْعَظِيمِ , مَا شَاءَ اللَّهُ كَانَ ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ ، وَلا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ , أَعْلَمُ أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا , اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي ، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا ، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ. ",
         "سُبْحـانَ اللهِ وَبِحَمْـدِهِ. "
     )
-    private val itemNumberElmassa = intArrayOf(
-        1,
-        1,
-        3,
-        3,
-        3,
-        1,
-        1,
-        3,
-        4,
-        1,
-        7,
-        3,
-        1,
-        1,
-        3,
-        3,
-        3,
-        1,
-        3,
-        1,
-        1,
-        3,
-        10,
-        3,
-        3,
-        3,
-        3,
-        1,
-        100
-    )
+    private val itemNumberElmassa = intArrayOf(1, 1, 3, 3, 3, 1, 1, 3, 4, 1, 7, 3, 1, 1,
+        3, 3, 3, 1, 3, 1, 1, 3, 10, 3, 3, 3, 3, 1, 100)
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -99,6 +70,8 @@ class RecycleAdkareElmassaAdapter :RecyclerView.Adapter<RecycleAdkareElmassaAdap
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.text.text = itemAdkareElmassa[position]
         holder.btn.text = itemNumberElmassa[position].toString()
+
+
         holder.btn.setOnClickListener {
             var numberOfTasbih = holder.btn.text.toString().toInt()
 
