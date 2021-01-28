@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".adkare_isitgade"
     android:orientation="horizontal"
-    android:background="@color/orange"
     >
 
     <androidx.recyclerview.widget.RecyclerView

@@ -12,25 +12,39 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_adkare_soubh"
-            app:destination="@id/adkare_soubh" />
+            app:destination="@id/adkare_soubh"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_adkare_elmassa"
-            app:destination="@id/adkare_elmassa" />
+            app:destination="@id/adkare_elmassa"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_adkare_isitgade"
-            app:destination="@id/adkare_isitgade" />
+            app:destination="@id/adkare_isitgade"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_adkare_Noume"
-            app:destination="@id/adkare_Noume" />
+            app:destination="@id/adkare_Noume"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_adkare_safare"
-            app:destination="@id/adkare_safare" />
+            app:destination="@id/adkare_safare"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_adkare_salate"
-            app:destination="@id/adkare_salate" />
+            app:destination="@id/adkare_salate"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_mainFragment_to_tasbih"
-            app:destination="@id/tasbih" />
+            app:destination="@id/tasbih"
+            app:enterAnim="@anim/entre_from_right"
+            app:exitAnim="@anim/exit_to_right" />
     </fragment>
     <fragment
         android:id="@+id/adkare_soubh"

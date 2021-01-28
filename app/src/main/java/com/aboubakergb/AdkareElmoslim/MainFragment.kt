@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.costume_toaste.*
@@ -12,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment() {
 
-    override fun onCreateView(
+  override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,10 +25,9 @@ class MainFragment : Fragment() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // to support the action bar in fragment
-
-        setHasOptionsMenu(true)
         super.onCreate(savedInstanceState)
+
+
 
         // Make toast when the fragment start
         Toast(this.activity).apply {
@@ -34,20 +35,11 @@ class MainFragment : Fragment() {
             view = layoutInflater.inflate(R.layout.costume_toaste, toast)
             show()
         }
+
+
+
     }
 
-    // Create menu in  action bar
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.main_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.menu_aboutUs -> Toast.makeText(activity, "about us  selected ", Toast.LENGTH_SHORT).show()
-        }
-        return true
-    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -20,9 +20,7 @@ class RecycleAdkareIstigadaAdapter: RecyclerView.Adapter<RecycleAdkareIstigadaAd
         init {
             text = itemView.findViewById(R.id.text_diker)
             btn=itemView.findViewById(R.id.button_number)
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,23 +31,25 @@ class RecycleAdkareIstigadaAdapter: RecyclerView.Adapter<RecycleAdkareIstigadaAd
         holder.text.text =itemAdkare[position]
         holder.btn.text = itemNumber[position].toString()
 
+
+        var numberOfTasbih = holder.btn.text.toString().toInt()
         holder.btn.setOnClickListener {
-            var numberOfTasbih = holder.btn.text.toString().toInt()
             if (numberOfTasbih == 0) {
+                holder.btn.isEnabled = false
+
                 //to disable the button when the number is 0
                 holder.btn.setBackgroundResource(R.drawable.costume_button_disable)
                 holder.btn.isEnabled = false
-
             } else {
-
                 numberOfTasbih -= 1
                 holder.btn.text = numberOfTasbih.toString()
             }
         }
+
     }
+
     override fun getItemCount(): Int {
         return itemAdkare.size
     }
-
 
 }

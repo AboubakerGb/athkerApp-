@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:padding="16dp"
-        android:background="@color/orange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#f5f0e4"
         android:orientation="vertical"
-        >
+        android:padding="16dp">
 
         <TextView
+
             android:id="@+id/text_diker"
-            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="#000"
             android:background="@drawable/costume_text_view"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="5dp"
             android:text=" بسم الله الرحمان الرحيم "
-            android:lineSpacingMultiplier="1.5"/>
-
+            android:textColor="#000"
+            android:textSize="20sp" />
 
 
         <Button
@@ -31,12 +29,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/costume_button_1"
+            android:elevation="6pt"
             android:gravity="center"
-
             android:text="10"
             android:textColor="#ffffff"
             android:textSize="25sp" />
 
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
